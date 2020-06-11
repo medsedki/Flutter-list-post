@@ -66,3 +66,25 @@ A few resources to get you started if this is your first Flutter project:
         </td>
     </tr>
 </table>
+
+## Work with Sliver AppBar :
+
+    * the height you see when you scrolled dwon :
+        expandedHeight: 200,
+
+    * make the appBar stay when scroll down :
+        pinned: true,
+
+<table>
+    <tr>
+        <td style="padding:10px">
+            <img src="screen/screen11.png">
+        </td>
+        <td style="padding:10px">
+            <img src="screen/screen12.png">
+        </td>
+        <td style="padding:10px">
+            <img src="screen/screen13.png">
+        </td>
+    </tr>
+</table>
