@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:flutterjsonapp/page3.dart';
 import 'package:http/http.dart' as http;
 
 import 'model/post.dart';
@@ -173,6 +174,13 @@ class MyApp extends StatelessWidget {
               leading: new Icon(Icons.devices_other),
               onTap: () => Navigator.of(context).push(new MaterialPageRoute(
                   builder: (BuildContext context) => new page2())),
+            ),
+            new ListTile(
+              title: new Text("Page View"),
+              //trailing: new Icon(Icons.pages),
+              leading: new Icon(Icons.devices_other),
+              onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                  builder: (BuildContext context) => new page3())),
             ),
           ],
         ),

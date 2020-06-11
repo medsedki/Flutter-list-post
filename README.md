@@ -34,3 +34,19 @@ A few resources to get you started if this is your first Flutter project:
         </td>
     </tr>
 </table>
+
+## Add PageView :
+
+<table>
+    <tr>
+        <td style="padding:10px">
+            <img src="screen/screen5.png">
+        </td>
+        <td style="padding:10px">
+            <img src="screen/screen6.png">
+        </td>
+        <td style="padding:10px">
+            <img src="screen/screen7.png">
+        </td>
+    </tr>
+</table>
