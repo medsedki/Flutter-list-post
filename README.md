@@ -21,3 +21,16 @@ A few resources to get you started if this is your first Flutter project:
         </td>
     </tr>
 </table>
+
+## Add snackbar and a SheetModal Button :
+
+<table>
+    <tr>
+        <td style="padding:10px">
+            <img src="screen/screen3.png">
+        </td>
+        <td style="padding:10px">
+            <img src="screen/screen4.png">
+        </td>
+    </tr>
+</table>

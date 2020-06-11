@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 import 'model/post.dart';
+import 'page2.dart';
 
 void main() {
   runApp(
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
     var data = await http.get('https://jsonplaceholder.typicode.com/posts');
     var dataDecode = json.decode(data.body);
 
-    print('Posts : $dataDecode');
+    //print('Posts : $dataDecode');
 
     List<Post> postList = List();
     dataDecode.forEach((post) {
@@ -147,6 +148,34 @@ class MyApp extends StatelessWidget {
                 );
               }
             }),
+      ),
+      drawer: new Drawer(
+        child: ListView(
+          children: <Widget>[
+            UserAccountsDrawerHeader(
+              currentAccountPicture: new CircleAvatar(
+                backgroundColor: Colors.black38,
+                child: new Text("S."),
+              ),
+              decoration: new BoxDecoration(color: Colors.lightBlueAccent),
+            ),
+            new ListTile(
+              title: new Text("Home"),
+              //trailing: new Icon(Icons.home),
+              leading: new Icon(Icons.home),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            new ListTile(
+              title: new Text("Other Test"),
+              //trailing: new Icon(Icons.pages),
+              leading: new Icon(Icons.devices_other),
+              onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                  builder: (BuildContext context) => new page2())),
+            ),
+          ],
+        ),
       ),
     );
   }
