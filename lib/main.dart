@@ -3,6 +3,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutterjsonapp/page3.dart';
+import 'package:flutterjsonapp/page4.dart';
 import 'package:http/http.dart' as http;
 
 import 'model/post.dart';
@@ -178,9 +179,16 @@ class MyApp extends StatelessWidget {
             new ListTile(
               title: new Text("Page View"),
               //trailing: new Icon(Icons.pages),
-              leading: new Icon(Icons.devices_other),
+              leading: new Icon(Icons.pages),
               onTap: () => Navigator.of(context).push(new MaterialPageRoute(
                   builder: (BuildContext context) => new page3())),
+            ),
+            new ListTile(
+              title: new Text("Use Shared Preference"),
+              //trailing: new Icon(Icons.pages),
+              leading: new Icon(Icons.save),
+              onTap: () => Navigator.of(context).push(new MaterialPageRoute(
+                  builder: (BuildContext context) => new page4())),
             ),
           ],
         ),
